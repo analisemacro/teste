@@ -1,0 +1,147 @@
+---
+title: "Coletando e analisando dados do Balanço Patrimonial"
+subtitle: "Análise de Demonstrativos Financeiros"
+author: 'Luiz Henrique'
+output:
+   xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation: 
+        scroll: false
+params:
+  logo_slides: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.PNG"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning   = FALSE,  # exibir avisos do console?
+  message   = FALSE,  # exibir mensagens do console?
+  dpi       = 300,    # resolução
+  fig.align = "center"# alinhamento de imagens
+  )
+```
+
+
+```{css, echo=FALSE}
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+```
+
+
+## Balanço Patrimonial
+### O que é?
+
+
+  - Apresenta a **posição patrimonial e financeira** de uma empresa em dado momento;
+  - Informação **estática**;
+  - Elemento de partida para entender a situação econômica e financeira da empresa
+
+---
+## Balanço Patrimonial
+### O que é?
+
+Tem três componentes:
+
+.pull-left[
+- **Ativo:** recurso controlado devido a eventos passado e que se espera futuros benefícios econômicos;
+- **Passivo:** obrigação presente da entidade de transferir um recurso econômico como resultado de eventos passados;
+- **Patrimônio Líquido:** diferença entre ativo e passivo, resultando no valor contábil pertencente aos sócios.
+ 
+ ]
+
+.pull-right[
+
+```{r, out.width = "130%", fig.alt="", fig.cap=""}
+knitr::include_graphics("imgs/bp1.jpg")
+```
+
+]
+
+---
+## Balanço Patrimonial
+### Ativo
+
+.pull-left[
+
+No **ativo** relacionam-se todas as **aplicações de recursos efetuadas pela empresa**. Esses recursos poderão estar distribuídos em:
+  - **ativos circulantes**, assim denominados por apresentarem alta rotação, como: valores em caixa,
+valores a receber a curto prazo etc.; e
+  - **ativos não circulantes**, os quais possuem os seguintes grupos de contas: realizável a longo prazo, investimentos, imobilizado e intangível.
+
+Somente compõem o Ativo de uma entidade os itens que prometem a **geração de benefícios econômicos futuros**. 
+
+]
+
+.pull-right[
+
+```{r, out.width = "200%", fig.alt="", fig.cap=""}
+knitr::include_graphics("imgs/bp2.jpg")
+```
+
+]
+
+---
+## Balanço Patrimonial
+### Passivo
+
+.pull-left[
+
+O **passivo** identifica as **exigibilidades** e **obrigações** da empresa, cujos valores encontram-se investidos nos ativos.
+
+Os recursos dos passivos são classificados como **curto prazo** e **longo prazo**, sendo definidos,
+respectivamente, por **passivo circulante** e **passivo não circulante**.
+
+O **passivo** é composto de todas as **obrigações atuais da entidade**, geradas por eventos ocorridos no passado, e cuja liquidação **futura** irá exigir um **desembolso de caixa** da empresa.
+
+]
+
+.pull-right[
+
+```{r, out.width = "100%", fig.alt="", fig.cap=""}
+knitr::include_graphics("imgs/bp2.jpg")
+```
+]
+  
+---
+
+## Balanço Patrimonial
+### Patrimônio Líquido
+
+.pull-left[
+
+O **patrimônio líquido** é representado pela **diferença** entre o total do ativo e do passivo em determinado momento.
+
+Identifica os **recursos próprios da empresa**, sendo formado pelo **capital investido pelos acionistas**
+(ou sócios), mais os **lucros** gerados nos exercícios e que foram retidos na empresa (lucros não distribuídos). 
+
+A legislação vigente prevê que o patrimônio líquido é constituído por Capital Social, Reservas de Capital,
+Ajustes de Avaliação Patrimonial, Reservas de Lucros, Ações em Tesouraria e Prejuízos Acumulados.
+
+]
+
+.pull-right[
+
+```{r, out.width = "100%", fig.alt="", fig.cap=""}
+knitr::include_graphics("imgs/bp2.jpg")
+```
+
+]
+
+---
+
+## Referências
+
+Neto, A. A. *Estruturas e Análise de Balanços - Um Enfoque Economico* - Financeiro, 12 ed. Atlas, 2020.

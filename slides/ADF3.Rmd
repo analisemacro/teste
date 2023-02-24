@@ -1,0 +1,48 @@
+---
+title: "Coletando e analisando dados do Balanço Patrimonial"
+subtitle: "Análise de Demonstrativos Financeiros"
+author: 'Luiz Henrique'
+output:
+   xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation: 
+        scroll: false
+params:
+  logo_slides: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.PNG"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning   = FALSE,  # exibir avisos do console?
+  message   = FALSE,  # exibir mensagens do console?
+  dpi       = 300,    # resolução
+  fig.align = "center"# alinhamento de imagens
+  )
+```
+
+
+```{css, echo=FALSE}
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+```
+
+
+---
+
+## Referências
+
+Neto, A. A. *Estruturas e Análise de Balanços - Um Enfoque Economico* - Financeiro, 12 ed. Atlas, 2020.
